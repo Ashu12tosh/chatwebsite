@@ -1,9 +1,9 @@
 import { fetchRedis } from '@/helpers/redis'
 import { addFriendValidator } from '@/libs/validations/add-friend'
-// import { authOptions } from '@/lib/auth'
-// import { db } from '@/lib/db'
-// import { pusherServer } from '@/lib/pusher'
-// import { toPusherKey } from '@/lib/utils'
+import { authOptions } from '@/lib/auth'
+import { db } from '@/lib/db'
+import { pusherServer } from '@/lib/pusher'
+import { toPusherKey } from '@/lib/utils'
 
 import { getServerSession } from 'next-auth'
 import { z } from 'zod'
@@ -11,7 +11,7 @@ import { z } from 'zod'
 export async function POST(req: Request) {
   try {
     const body = await req.json()
-  console.log(body)
+
     const { email: emailToAdd } = addFriendValidator.parse(body.email)
 
     const idToAdd = (await fetchRedis(

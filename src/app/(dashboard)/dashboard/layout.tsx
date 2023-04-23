@@ -1,6 +1,6 @@
 import { Icon, Icons } from '@/components/Icons'
 import SignOutButton from '@/components/SignOutButton'
-import { authOptions } from '@/lib/auth'
+import { authOptions } from '@/libs/auth'
 import { getServerSession } from 'next-auth'
 import Image from 'next/image'
 import Link from 'next/link'
