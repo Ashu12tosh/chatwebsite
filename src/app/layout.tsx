@@ -1,4 +1,4 @@
-// import Providers from '@/components/Providers'
+import Providers from '@/components/Providers'
 import './globals.css'
 
 // Done after the video and optional: add page metadata
@@ -15,8 +15,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        {children}
-        </body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

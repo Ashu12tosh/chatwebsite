@@ -1,8 +1,9 @@
+
 import ChatInput from '@/components/ChatInput'
 import Messages from '@/components/Messages'
 import { fetchRedis } from '@/helpers/redis'
-import { authOptions } from '@/lib/auth'
-import { messageArrayValidator } from '@/lib/validations/message'
+import { authOptions } from '@/libs/auth'
+import { messageArrayValidator } from '@/libs/validations/message'
 import { getServerSession } from 'next-auth'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
