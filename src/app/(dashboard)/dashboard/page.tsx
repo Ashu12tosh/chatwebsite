@@ -1,7 +1,8 @@
+
 import { getFriendsByUserId } from '@/helpers/get-friends-by-user-id'
 import { fetchRedis } from '@/helpers/redis'
-import { authOptions } from '@/lib/auth'
-import { chatHrefConstructor } from '@/lib/utils'
+import { authOptions } from '@/libs/auth'
+import { chatHrefConstructor } from '@/libs/utils'
 import { ChevronRight } from 'lucide-react'
 import { getServerSession } from 'next-auth'
 import Image from 'next/image'

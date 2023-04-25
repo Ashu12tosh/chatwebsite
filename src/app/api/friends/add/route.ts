@@ -1,9 +1,9 @@
 import { fetchRedis } from '@/helpers/redis'
 import { addFriendValidator } from '@/libs/validations/add-friend'
-import { authOptions } from '@/lib/auth'
-import { db } from '@/lib/db'
-import { pusherServer } from '@/lib/pusher'
-import { toPusherKey } from '@/lib/utils'
+import { authOptions } from '@/libs/auth'
+import { db } from '@/libs/db'
+import { pusherServer } from '@/libs/pusher'
+import { toPusherKey } from '@/libs/utils'
 
 import { getServerSession } from 'next-auth'
 import { z } from 'zod'
