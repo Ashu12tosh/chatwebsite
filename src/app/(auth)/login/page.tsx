@@ -68,7 +68,7 @@ const Page: FC = () => {
           </Button>
         </div>
       </div>
-    <p> Made by Tushar Tripathi with lots of ❤️</p>
+    <p className='justify-center align-items'> Made by Tushar Tripathi with lots of ❤️</p>
     </>
   )
 }
